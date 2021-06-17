@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Reggae+One&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROGRESS BAR</title>
+    
+    
+   
+
+
+  
+    <style>
+       body{
+           background-image: url("loading.jpg");
+           
+       }
+        
+        .bar{
+            font-family: 'Reggae One', cursive;
+            font-weight: 500;
+            margin-top:300px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            background-color:rgba(82, 82, 82, 0.877);
+            text-align: center;
+            animation-name: load1;
+            animation-duration: 5s;
+            animation-iteration-count:1;
+            background-position: bottom;
+            color:aqua;
+            animation-timing-function: ease-in-out;
+            font-size: xx-large;
+               
+        }
+        @keyframes load1{
+           from{
+               width: 0%;
+           }to{
+               width: 100%;
+           }
+           10%{
+            transform:rotateX(720deg);
+
+           }35%{
+               transform: initial;
+           }
+      
+          
+            }img{
+       
+       width:10%;
+      margin-top: 200px;
+       
+       animation-name: shaktimaan;
+       background-color:initial;
+      
+       animation-iteration-count: 1;
+       animation-timing-function: ease-in-out;
+      animation-duration: 5s;
+   }@keyframes shaktimaan{
+    from
+    {
+     transform: initial;  
+
+    }to{
+        transform:rotateZ(15000deg);
+
+    }0%{
+        background-color:initial;
+        transition:2s;
+    }
+           
+    10%{
+        background-color:initial;
+    }20%{
+        background-color:aqua;
+    }
+        
+    95%{
+        background-color:aqua;
+     transition: initial;
+    }100%{
+        background-color:initial;
+    }
+    
+   }
+        
+            </style>
+            <body>
+                <center><img src="ci.png"/></center>
+                <div class="bar"id="u">
+                   !.....LOADING.....!
+
+                </div>
+
+            </body>
+
+</html>
